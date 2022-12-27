@@ -1,0 +1,60 @@
+.header__profile {
+  border-radius: 10rem;
+
+  &:nth-child(n) {
+    background: #37ff33;
+  }
+
+  &:nth-child(n + 2) {
+    background: #fff500;
+    transform: translateY(-30%);
+  }
+
+  &:nth-child(n + 3) {
+    background: #0048fc;
+    transform: translateY(-60%);
+  }
+  &:nth-child(n + 4) {
+    background: #e964fd;
+    transform: translateY(-90%);
+  }
+}
+
+.figure {
+  width: 20rem;
+  pointer-events: none;
+}
+
+.figure--min {
+  height: 15rem;
+  width: 15rem;
+  pointer-events: none;
+
+}
+
+.figure--mid {
+  height: 40rem;
+  width: 40rem;
+  pointer-events: none;
+}
+
+.ellipse {
+  aspect-ratio: 1;
+  overflow: hidden;
+  clip-path: circle(45% at 50%);
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.sponsor--block {
+  top: -20%;
+  transform: scale(0.7);
+}
+
+.portfolio__figure{
+  align-items: baseline;
+}

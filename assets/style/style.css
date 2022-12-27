@@ -1,0 +1,299 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.4s ease-in-out;
+}
+
+:root {
+  --color--gray: #696969;
+  --paragraph--color: #000000ae;
+  --color--black: #000000;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.header__profile {
+  border-radius: 10rem;
+}
+.header__profile:nth-child(n) {
+  background: #37ff33;
+}
+.header__profile:nth-child(n+2) {
+  background: #fff500;
+  transform: translateY(-30%);
+}
+.header__profile:nth-child(n+3) {
+  background: #0048fc;
+  transform: translateY(-60%);
+}
+.header__profile:nth-child(n+4) {
+  background: #e964fd;
+  transform: translateY(-90%);
+}
+
+.figure {
+  width: 20rem;
+  pointer-events: none;
+}
+
+.figure--min {
+  height: 15rem;
+  width: 15rem;
+  pointer-events: none;
+}
+
+.figure--mid {
+  height: 40rem;
+  width: 40rem;
+  pointer-events: none;
+}
+
+.ellipse {
+  aspect-ratio: 1;
+  overflow: hidden;
+  -webkit-clip-path: circle(45% at 50%);
+          clip-path: circle(45% at 50%);
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sponsor--block {
+  top: -20%;
+  transform: scale(0.7);
+}
+
+.portfolio__figure {
+  align-items: baseline;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  padding: 4rem 8rem;
+  position: relative;
+}
+
+.size--max {
+  max-height: 100vh;
+  min-width: 100vw;
+}
+
+.aside {
+  width: 99vw;
+  overflow: hidden;
+  margin: 0% auto;
+}
+
+.width--xxl {
+  width: 180vw;
+  overflow-x: scroll;
+}
+
+.width--max {
+  width: 80%;
+}
+
+.width--mid {
+  width: 60%;
+}
+
+.width--min {
+  width: 40%;
+}
+
+.flex--column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flex--item {
+  flex: 0 0 45%;
+}
+
+.grid--logo {
+  display: grid;
+  grid-template-columns: repeat(4, 20rem);
+  justify-content: center;
+  align-items: center;
+  transform: scale(0.4);
+  gap: 1rem;
+}
+@media (min-width: 64em) {
+  .grid--logo {
+    transform: scale(1);
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.grid .figure {
+  width: 100%;
+}
+
+html {
+  line-height: 1.4;
+  font-size: 62.5%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 70%;
+  }
+}
+@media (max-width: 58em) {
+  html {
+    font-size: 52%;
+  }
+}
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 31.25em) {
+  html {
+    font-size: 40.75%;
+  }
+}
+@media (max-width: 25em) {
+  html {
+    font-size: 30%;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: capitalize;
+  line-height: 1.7;
+  font-weight: 200;
+}
+
+.heading--primary {
+  font-size: 4rem;
+}
+
+.heading--secondary {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.heading--sextuple {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.paragraph {
+  font-size: 1.8rem;
+  color: var(--paragraph--color);
+  font-weight: 200;
+  margin: 2rem 0;
+}
+
+.paragraph--column {
+  -moz-column-count: 2;
+       column-count: 2;
+}
+
+@media (min-width: 64em) {
+  .heading--primary {
+    font-size: 9.6rem;
+  }
+  .paragraph {
+    font-size: 2rem;
+  }
+}
+.gray {
+  color: #696969;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.mt--auto {
+  margin-top: 8rem;
+}
+
+.m--max {
+  margin: 5rem 0;
+}
+
+.mt--max {
+  margin-top: 15rem;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.list--item {
+  list-style: none;
+}
+
+.marquee {
+  display: flex;
+  overflow: hidden;
+  gap: 5rem;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.marquee--scroll {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
+  gap: 5rem;
+  -webkit-animation: scroll 15s linear infinite;
+          animation: scroll 15s linear infinite;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(calc(-100% - 5rem));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(calc(-100% - 5rem));
+  }
+}/*# sourceMappingURL=style.css.map */

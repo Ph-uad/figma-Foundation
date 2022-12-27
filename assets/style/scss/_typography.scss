@@ -1,0 +1,90 @@
+html {
+  line-height: 1.4;
+  font-size: 62.5%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  @media (max-width: 75em) {
+    & {
+      font-size: 70%;
+    }
+  }
+
+  @media (max-width: 58em) {
+    & {
+      font-size: 52%;
+    }
+  }
+
+  @media (max-width: 56.25em) {
+    & {
+      font-size: 50%;
+    }
+  }
+
+  @media (max-width: 31.25em) {
+    & {
+      font-size: 40.75%;
+    }
+  }
+
+  @media (max-width: 25em) {
+    & {
+      font-size: 30%;
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: capitalize;
+  line-height: 1.7;
+  font-weight: 200;
+}
+
+.heading--primary {
+  font-size: 4rem;
+}
+
+.heading--secondary {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.heading--sextuple {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.paragraph {
+  font-size: 1.8rem;
+  color: var(--paragraph--color);
+  font-weight: 200;
+  margin: 2rem 0;
+}
+
+.paragraph--column {
+  column-count: 2;
+}
+
+@media (min-width: 64em) {
+  .heading--primary {
+    font-size: 9.6rem;
+  }
+  .paragraph {
+    font-size: 2rem;
+  }
+}
+
+.gray {
+  color: #696969;
+}
+
+.italic {
+  font-style: italic;
+}

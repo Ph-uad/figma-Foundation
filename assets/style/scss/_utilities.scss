@@ -1,0 +1,54 @@
+
+
+.mt--auto{
+    margin-top: 8rem;
+}
+
+.m--max{
+    margin: 5rem 0;
+}
+.mt--max{
+    margin-top: 15rem;
+}
+
+.center{
+    margin: 0 auto;
+}
+
+.text--center{
+    text-align: center;
+}
+
+.list--item{
+    list-style: none;
+}
+
+.marquee{
+   display: flex;
+   overflow: hidden;
+   gap: 5rem;
+   position: relative;
+   user-select: none;
+}
+
+.marquee--scroll{
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    min-width: 100%;
+    gap: 5rem;
+
+    animation: scroll 15s linear infinite ;
+}
+
+
+
+@keyframes scroll {
+    0%{
+       transform: translateX(calc(100%));
+    }
+
+    100%{
+      transform: translateX(calc(-100% - 5rem));
+    }
+}
