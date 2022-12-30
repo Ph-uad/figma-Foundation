@@ -1,7 +1,7 @@
 .container{
     height: 100%;
     width: 100%;
-    padding: 4rem 8rem;
+    padding: 4rem;
     position: relative;
 }
 
@@ -21,16 +21,25 @@
    overflow-x: scroll;
 }
 
-.width--max{
+.width--max, .width--mid{
     width: 80%;
 }
 
 .width--mid{
-    width: 60%;
+    @media (min-width:64em) {
+        &{
+            width: 60%;
+        }
+    }
 }
 
 .width--min{
-    width: 40%;
+    @media (min-width:64em) {
+        &{
+            width: 40%;
+        }
+    }
+
 }
 
 .flex--column{

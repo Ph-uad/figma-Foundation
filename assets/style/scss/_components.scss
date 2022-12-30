@@ -1,5 +1,5 @@
 .header__profile {
-  border-radius: 10rem;
+  border-radius: 500px;
   flex: 0 0 22%;
 
   &:nth-child(n) {
@@ -22,7 +22,7 @@
 }
 
 .figure {
-  width: 20rem;
+  width: 100%;
   pointer-events: none;
 }
 
@@ -34,8 +34,8 @@
 }
 
 .figure--mid {
-  height: 20rem;
-  width: 20rem;
+  height: 40rem;
+  width: 40rem;
   pointer-events: none;
 }
 
